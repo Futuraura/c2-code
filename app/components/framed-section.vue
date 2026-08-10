@@ -1,14 +1,30 @@
 <template>
   <div class="wrapper">
-    <div>
+    <div class="inner-box">
       <slot />
     </div>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .wrapper {
-  border: 3px #fff solid;
+  display: flex;
+  align-self: stretch;
+  max-width: 1540px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .inner-box {
+    border: 2px #fff solid;
+    border-radius: 4px;
+    display: flex;
+    max-width: 1500px;
+    box-sizing: border-box;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
   &::before {
     content: "exampleFunction();";
@@ -16,12 +32,16 @@
     background: #fff;
     color: #0b0e14;
     font-family: "JetBrains Mono";
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
-    padding: 2px 12px 4px 12px;
-    margin-left: 32px;
+    margin-left: 16px;
+
+    display: flex;
+    padding: 2px 12px 0 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 }
 </style>
