@@ -2,6 +2,8 @@
   <div>
     <h1>Welcome to the homepage</h1>
 
-    <RedTitle>This is an auto-imported component</RedTitle>
+    <FramedSection>
+      <h1>Hello World!</h1>
+    </FramedSection>
   </div>
 </template>
