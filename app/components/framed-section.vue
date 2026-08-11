@@ -1,5 +1,11 @@
+<script setup lang="js">
+const props = defineProps({
+  boxName: { type: String, default: "idiotDevForgotTheName();" },
+});
+</script>
+
 <template>
-  <div class="wrapper">
+  <div class="wrapper" :style="{ '--before-content': `'${props.boxName}'` }">
     <div class="inner-box">
       <slot />
     </div>
@@ -13,6 +19,7 @@
   max-width: 1540px;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 
   .inner-box {
     border: 2px #fff solid;
@@ -27,18 +34,17 @@
   }
 
   &::before {
-    content: "exampleFunction();";
+    content: var(--before-content);
     border-radius: 4px 4px 0 0;
     background: #fff;
     color: #0b0e14;
-    font-family: "JetBrains Mono";
+    font-family: "JetBrains Mono", monospace;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 16px;
-
     display: flex;
-    padding: 2px 12px 0 12px;
+    padding: 2px 12px 0;
     justify-content: center;
     align-items: center;
     gap: 10px;

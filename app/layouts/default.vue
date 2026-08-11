@@ -1,5 +1,8 @@
+<script lang="js"></script>
+
 <template>
   <div>
+    <navbar-component />
     <slot />
   </div>
 </template>
@@ -33,7 +36,6 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  justify-self: stretch;
-  align-self: stretch;
+  place-self: stretch stretch;
 }
 </style>
