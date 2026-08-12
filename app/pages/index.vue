@@ -89,13 +89,13 @@
 
 <style lang="scss" scoped>
 .content-wrapper {
-  padding: 140px 40px 80px 40px;
+  padding: 140px 40px 20dvh 40px;
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 80px;
+  gap: 20dvh;
 
   .welcomeBanner {
     display: flex;
