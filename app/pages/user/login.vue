@@ -7,11 +7,15 @@
           <div class="inputs">
             <input type="email" placeholder="Email" />
             <input type="password" placeholder="Password" />
-            <a href="/user/forgot">Forgot your password?</a>
+            <a href="/user/forgot"
+              >Forgot your password? <Icon name="ri:arrow-right-down-line"
+            /></a>
           </div>
           <div class="buttons">
             <button type="button">Login</button>
-            <a href="/user/register">Register</a>
+            <a href="/user/register"
+              >Register <Icon name="ri:arrow-right-down-line"
+            /></a>
           </div>
         </div>
       </FramedSection>
@@ -100,6 +104,18 @@
             font-size: 20px;
             font-weight: 400;
             text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            height: 26px;
+            line-height: 26px;
+
+            .iconify {
+              width: 100%;
+              height: 100%;
+              display: inline-flex;
+              align-items: center;
+              aspect-ratio: 1/1;
+            }
           }
         }
 
@@ -135,6 +151,17 @@
             color: #fff;
             font-size: 20px;
             font-weight: 400;
+
+            display: inline-flex;
+            align-items: center;
+
+            .iconify {
+              width: 100%;
+              height: 100%;
+              display: inline-flex;
+              align-items: center;
+              aspect-ratio: 1/1;
+            }
           }
         }
       }
