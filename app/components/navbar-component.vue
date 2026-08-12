@@ -4,7 +4,7 @@
   <div class="navbar-wrapper">
     <div class="navbar">
       <div class="left">
-        <p class="logo">{C2}</p>
+        <a href="/" class="logo">{C2}</a>
       </div>
       <div class="right">
         <div class="links">
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 66px;
+  height: auto;
   width: 100%;
   border-bottom: 3px solid #fff;
   border-image: repeating-linear-gradient(
@@ -47,7 +47,7 @@
     display: flex;
     justify-content: space-between;
     height: auto;
-    max-width: 1500px;
+    max-width: var(--max-width);
     padding: 15px 0;
 
     .left {
@@ -55,13 +55,17 @@
 
       .logo {
         color: #fff;
-        font-family: "JetBrains Mono", monospace;
         font-size: 36px;
         font-style: italic;
-        font-weight: 900;
+        font-weight: 800;
         line-height: 1;
         padding: 0;
         margin: 0;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -72,13 +76,8 @@
       width: 100%;
 
       a {
-        font-family: "JetBrains Mono";
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        text-decoration: none;
         font-size: 20px;
-        text-wrap-mode: nowrap;
+        text-decoration: none;
       }
 
       .links {
@@ -91,12 +90,10 @@
 
         a {
           color: #fff;
-          font-size: 18px;
           padding-bottom: 2px;
 
           &::before {
             content: "/";
-            padding-right: 4px;
           }
 
           &:hover {

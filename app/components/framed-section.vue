@@ -15,8 +15,7 @@ const props = defineProps({
 <style lang="scss" scoped>
 .wrapper {
   display: flex;
-  align-self: stretch;
-  max-width: 1540px;
+  max-width: var(--max-width);
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
@@ -25,9 +24,7 @@ const props = defineProps({
     border: 2px #fff solid;
     border-radius: 4px;
     display: flex;
-    max-width: 1500px;
     box-sizing: border-box;
-    padding: 40px;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -38,11 +35,9 @@ const props = defineProps({
     border-radius: 4px 4px 0 0;
     background: #fff;
     color: #0b0e14;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 16px;
-    font-style: normal;
+    font-size: 20px;
     font-weight: 600;
-    margin-left: 16px;
+    margin-left: 30px;
     display: flex;
     padding: 2px 12px 0;
     justify-content: center;

@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon"],
+  modules: ["@nuxt/eslint", "@nuxt/icon"],
   postcss: {
     plugins: {},
   },
@@ -15,13 +15,7 @@ export default defineNuxtConfig({
       // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  fonts: {
-    provider: "bunny",
-    families: [
-      {
-        name: "JetBrains Mono",
-        provider: "google",
-      },
-    ],
+  devServer: {
+    host: "0.0.0.0",
   },
 });
