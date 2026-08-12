@@ -15,4 +15,13 @@ export default defineNuxtConfig({
       // link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
+  fonts: {
+    provider: "bunny",
+    families: [
+      {
+        name: "JetBrains Mono",
+        provider: "google",
+      },
+    ],
+  },
 });
