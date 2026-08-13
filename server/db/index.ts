@@ -5,4 +5,4 @@ if (process.env.DATABASE_URL === undefined) {
   throw new Error("Database URL is not defined.");
 }
 
-const db = drizzle(process.env.DATABASE_URL);
+export const db = drizzle(process.env.DATABASE_URL);
