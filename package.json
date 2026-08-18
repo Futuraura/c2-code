@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:push": "bunx drizzle-kit push --verbose"
   },
   "dependencies": {
     "@better-auth/drizzle-adapter": "^1.6.27",

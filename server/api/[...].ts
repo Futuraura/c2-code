@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import { auth } from "../lib/auth";
 import { cors } from "hono/cors";
+import { auth } from "../lib/auth";
 
 const app = new Hono().basePath("/api");
 
@@ -11,12 +11,12 @@ app.get("/ping", async (c) => {
 app.use(
   "*",
   cors({
-    origin: "http://localhost:4321",
+    origin: "*",
     credentials: true,
   }),
 );
 
-app.on(["POST", "GET"], "/api/auth/*", (c) => auth.handler(c.req.raw));
+app.on(["POST", "GET"], "/auth/*", (c) => auth.handler(c.req.raw));
 
 /* DO NOT REMOVE, THIS LINE FORWARDS ALL TRAFFIC INTO HONO */
 export default defineEventHandler((event) => {

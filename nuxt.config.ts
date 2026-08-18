@@ -18,4 +18,13 @@ export default defineNuxtConfig({
   devServer: {
     host: "0.0.0.0",
   },
+  routeRules: {
+    "/api/**": {
+      cors: true,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+      },
+    },
+  },
 });
