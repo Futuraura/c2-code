@@ -37,7 +37,7 @@ const props = withDefaults(
     </div>
   </div>
 
-  <div v-if="props.mode === 'register'" class="loginForm">
+  <div v-if="props.mode === 'register'" class="form">
     <h1>Hello, world</h1>
     <div class="inputs">
       <input type="email" placeholder="Email" />
